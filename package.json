@@ -1,0 +1,16 @@
+{
+  "name": "hand-over",
+  "version": "1.0.0",
+  "description": "林楠——工作交接",
+  "main": "build-files.js",
+  "dependencies": {
+    "markdown": "^0.5.0",
+    "markdown-it": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "linnan",
+  "license": "ISC"
+}

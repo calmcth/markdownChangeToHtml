@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../md-style/style.css">
+    <link rel="stylesheet" href="../highlight/styles/monokai-sublime.css">
+    <script src="../highlight/highlight.pack.js"></script>
+    <title>{{title}}</title>
+    <style>
+        #back {
+            position: fixed;
+            padding: 10px 18px;
+            right: 20%;
+            top: 12%;
+            font-size: 18px;
+            background-color: white;
+            border: 2px solid #C7D1D8;
+
+            -webkit-transition: border-color 0.4s;
+            -moz-transition: border-color 0.4s;
+            -o-transition: border-color 0.4s;
+            transition: border-color 0.4s;
+        }
+
+        #back:hover{
+            border-color: #87898F;
+        }
+    </style>
+</head>
+<body>
+    {{operation}}
+    <div style="width: 80%; margin: 0 auto;">
+        {{content}}
+    </div>
+    <script>
+        (function (win) {
+            var backButton = win.back || win.document.getElementById('back');
+            if(backButton) {
+                backButton.onclick = function () {
+                    win.location.href = "../index.html";
+                };
+                // load highlight module
+                hljs.initHighlightingOnLoad()
+            }
+        })(window);
+    </script>
+</body>
+</html>
